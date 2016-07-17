@@ -1,13 +1,15 @@
-RDO Project
-===========
+OPENSTACK AIO USING THE RDO PROJECT
+===================================
 
 The RDO Project is an OpenStack community for CentOS/Fedora/RHEL users. Their website is https://www.rdoproject.org/
 
 The All-in-One node installation is base in RDO quickstart tailored to our particular needs and making sure it works the first time. We will be using CentOS7 (1511) for our lab.
 
 
+DEFAULT LAB CONFIGURATION
+=========================
 
-The default configuration setting are the following:
+The default lab configuration setting are the following:
 
 ```bash
 
@@ -43,45 +45,45 @@ The 'setup-aio.sh' script is a prescriptive deployment of the OpenStack Mitaka r
 
 1. Download the setup script 'setup-aio.sh' from this repository.
 
-```console
-curl -O https://gitlab.com/williamcaban/openstack-lab/raw/master/aio/packstack/setup-aio.sh
-```
+	```console
+	curl -O https://gitlab.com/williamcaban/openstack-lab/raw/master/aio/packstack/setup-aio.sh
+	```
 
-Note: If you want to customize the script to match your environment, open the file and edit the corresponding global variables.
+	Note: If you want to customize the script to match your environment, open the file and edit the corresponding global variables.
 
 
 2. Execute the setup script to get the installation menu:
 
-```console
+	```console
 
-# ./setup-aio.sh
-WELCOME TO OPENSTACK AIO LABSETUP
-1) Setup Prerequisites
-2) Install OpenStack AIO w/Heat and SSL (selfsign)
-3) Install OpenStack AIO from packstack-answers file
-4) Install OpenStack Client from PIP (using python virtual environment)
-5) Quit
-Pick an option:
+	# ./setup-aio.sh
+	WELCOME TO OPENSTACK AIO LABSETUP
+	1) Setup Prerequisites
+	2) Install OpenStack AIO w/Heat and SSL (selfsign)
+	3) Install OpenStack AIO from packstack-answers file
+	4) Install OpenStack Client from PIP (using python virtual environment)
+	5) Quit
+	Pick an option:
 
-```
+	```
 
 3. Start with option #1 to setup the prerequisites at the VM. The steps of this option are:
 
-Prerequisites:
-- Minimum VM Specs: 1xCPU 4GB RAM 10GB HDD 1 NIC
-- Install CentOS 7 (1511) base with English locale
-- Disable firewalld and NetworkManager
-- Setup a static IP address
-- Enable the 'network' service
+	Prerequisites:
+	- Minimum VM Specs: 1xCPU 4GB RAM 10GB HDD 1 NIC
+	- Install CentOS 7 (1511) base with English locale
+	- Disable firewalld and NetworkManager
+	- Setup a static IP address
+	- Enable the 'network' service
 
-	Note: Should you see an error "Failed to execute operation: Access denied" during the execution of the 'disable' command, then your firewalld or NetworkManager service might not be running. Continue with the rest of the commands.
+		Note: Should you see an error "Failed to execute operation: Access denied" during the execution of the 'disable' command, then your firewalld or NetworkManager service might not be running. Continue with the rest of the commands.
 
-- Install EPEL repo
-- Update CentOS packages
-- Install Packstack tool
+	- Install EPEL repo
+	- Update CentOS packages
+	- Install Packstack tool
 
 4. Once the prerequisites are completed, proceed with Option #2.
-Note: This step may take over an hour, depending in your bandwidth. During this step the packstack tool will download, install and configure the OpenStack environment using the latest stable RPMs of the particular release.
+	Note: This step may take over an hour, depending in your bandwidth. During this step the packstack tool will download, install and configure the OpenStack environment using the latest stable RPMs of the particular release.
 
 5. Once completed, select Option #5 to quit the installation script.
 
@@ -178,6 +180,6 @@ export OS_REGION_NAME=RegionOne
 THIS IS FOR LAB!
 ================
 
-Please, remember this configuration is intended as a personal Lab setup. THIS CONFIGURATIONS ARE **NOT** INTENDED FOR PROOF-OF-CONCEPTS NEITHER THEY REPRESENT A GOOD GOOD PRACTICE DESIGN.
+Please, remember this configuration is intended as a personal Lab setup. THIS CONFIGURATIONS ARE **NOT** INTENDED FOR PROOF-OF-CONCEPTS NEITHER THEY REPRESENT A GOOD PRACTICE DESIGN.
 
 
