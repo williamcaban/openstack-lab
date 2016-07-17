@@ -75,9 +75,7 @@ The 'setup-aio.sh' script is a prescriptive deployment of the OpenStack Mitaka r
 	- Disable firewalld and NetworkManager
 	- Setup a static IP address
 	- Enable the 'network' service
-
-		Note: Should you see an error "Failed to execute operation: Access denied" during the execution of the 'disable' command, then your firewalld or NetworkManager service might not be running. Continue with the rest of the commands.
-
+	Note: Should you see an error "Failed to execute operation: Access denied" during the execution of the 'disable' command, then your firewalld or NetworkManager service might not be running. Continue with the rest of the commands.
 	- Install EPEL repo
 	- Update CentOS packages
 	- Install Packstack tool
