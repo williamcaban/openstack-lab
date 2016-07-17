@@ -1,4 +1,3 @@
-====================================
 MANUAL LAB CONFIG (WORK IN PROGRESS)
 ====================================
 
@@ -121,6 +120,7 @@ ONBOOT=yes
 ```
 
 3. Enable network services and start it. 
+
 ```console
 
 systemctl enable network

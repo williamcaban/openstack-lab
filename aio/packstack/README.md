@@ -8,6 +8,7 @@ The All-in-One node installation is base in RDO quickstart tailored to our parti
 
 
 The default configuration setting are the following:
+
 ```bash
 
 #######################################
@@ -50,6 +51,7 @@ Note: If you want to customize the script to match your environment, open the fi
 
 
 2. Execute the setup script to get the installation menu:
+
 ```console
 
 # ./setup-aio.sh
