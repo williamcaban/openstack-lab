@@ -93,47 +93,48 @@ Prerequisites
 
 1. Disable firewalld and Network Manager
 
-```console
+	```console
 
-systemctl disable firewalld
-systemctl stop firewalld 
-systemctl disable NetworkManager
-systemctl stop NetworkManager
+	systemctl disable firewalld
+	systemctl stop firewalld 
+	systemctl disable NetworkManager
+	systemctl stop NetworkManager
 
-```
+	```
 
 2. Setup the static OOB Management IP for every node. Create the '/etc/sysconfig/network-scripts/ifcfg-enp0s3' file (or the equivalent in your environment)
 
-Note: Replace the '<VARIABLE>' for the correct value.
+	- Note: Replace the '<VARIABLE>' for the correct value.
 
-```console
-# OOB Management
-DEVICE=enp0s3        
-TYPE=Ethernet        
-BOOTPROTO=static     
-IPADDR=<OOB_IPADDRESS>   
-NETMASK=<OBB_NETMASK>
-GATEWAY=<OBB_GATEWAY> 
-DNS1=<OOB_DNS> 
-ONBOOT=yes
+	```console
 
-```
+	# OOB Management
+	DEVICE=enp0s3        
+	TYPE=Ethernet        
+	BOOTPROTO=static     
+	IPADDR=<OOB_IPADDRESS>   
+	NETMASK=<OBB_NETMASK>
+	GATEWAY=<OBB_GATEWAY> 
+	DNS1=<OOB_DNS> 
+	ONBOOT=yes
+
+	```
 
 3. Enable network services and start it. 
 
-```console
+	```console
 
-systemctl enable network
-systemctl start network
-# restart to work around bug with VirtualBox
-systemctl restart network
+	systemctl enable network
+	systemctl start network
+	# restart to work around bug with VirtualBox
+	systemctl restart network
 
-```
+	```
 
 4. Update packages with the latest patches
 
-```console
+	```console
 
-yum -y update
+	yum -y update
 
-```
+	```
