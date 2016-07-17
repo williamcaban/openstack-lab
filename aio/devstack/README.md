@@ -13,6 +13,9 @@ http://docs.openstack.org/developer/devstack/
 Details for deploying an OpenStack All-In-One 
 http://docs.openstack.org/developer/devstack/guides/single-machine.html
 
+STEPS
+-----
+
 Using CentOS 7 (1511) base installation, when using DevStack, an OpenStack deployment compatible with the basic labs should look like this:
 
 
@@ -71,6 +74,7 @@ Using CentOS 7 (1511) base installation, when using DevStack, an OpenStack deplo
 6. Install GIT and download the DevStack script from upstream project
 
 	```console
+
 	sudo yum install -y git
 	git clone https://git.openstack.org/openstack-dev/devstack
 	cd devstack
@@ -92,8 +96,7 @@ Using CentOS 7 (1511) base installation, when using DevStack, an OpenStack deplo
 	SERVICE_PASSWORD=c8fed1a0533f4f98
 
 	```
-
-	* NOTE: This will NOT install all the projects required by some exercises. Consider this a work-in-progress.
+		* NOTE: This will NOT install all the projects required by some exercises. Consider this a work-in-progress.
 
 8. Execute the installation script:
 
