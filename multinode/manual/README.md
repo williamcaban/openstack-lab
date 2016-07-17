@@ -103,8 +103,7 @@ Prerequisites
 	```
 
 2. Setup the static OOB Management IP for every node. Create the '/etc/sysconfig/network-scripts/ifcfg-enp0s3' file (or the equivalent in your environment)
-
-	- Note: Replace the '<VARIABLE>' for the correct value.
+	Note: Replace the '<VARIABLE>' for the correct value.
 
 	```console
 
