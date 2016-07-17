@@ -75,14 +75,12 @@ Logical configuration diagram:
 
 Sample NIC distribution:
 
-+------+-----------------------------------+
 | NIC  | Description                       |
-+------+-----------------------------------+
+|:----:|-----------------------------------|
 | eth0 | OOB Management (all nodes)        |
 | eth1 | Data (control and compute nodes)  |
 | eth2 | API & Dashboard (control nodes)   |
 | eth3 | External/Provider (control nodes) |
-+------+-----------------------------------+
 
 Required VRRP IPs:
 
@@ -95,6 +93,7 @@ Prerequisites
 -------------
 
 1. Disable firewalld and Network Manager
+
 ```console
 
 systemctl disable firewalld
