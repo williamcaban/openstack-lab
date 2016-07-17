@@ -1,7 +1,7 @@
 MANUAL LAB CONFIG (WORK IN PROGRESS)
 ====================================
 
-This lab will guide the student during a manual configuration of the OpenStack Lab environment.
+This lab will guide the student during a manual configuration of the OpenStack Lab environment. This OpenStack deployment may resemble a simple IaaS Proof-of-Concept. 
 
 Minimum Specs
 -------------

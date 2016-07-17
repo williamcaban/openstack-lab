@@ -109,6 +109,7 @@ setup-aio.sh
 | fbd71ab2-aaa6-4b02-b6f5-67406b97062a | cirros |
 +--------------------------------------+--------+
 ~(keystone_admin)]#
+
 ~(keystone_admin)]# openstack endpoint list
 +----------------------------------+-----------+---------------+---------------+
 | ID                               | Region    | Service Name  | Service Type  |
@@ -128,6 +129,7 @@ setup-aio.sh
 | 557363e46aa94baba741b6990862d208 | RegionOne | swift         | object-store  |
 +----------------------------------+-----------+---------------+---------------+
 ~(keystone_admin)]#
+
 ~(keystone_admin)]# openstack endpoint show f3268547842f4de6986b600660ac09ba        # Note: Choose one of the endpoints IDs 
 +--------------+----------------------------------+
 | Field        | Value                            |
