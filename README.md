@@ -7,20 +7,18 @@ This repo is intended to be used as part of the lab environments for my OpenStac
 The main directory structure is the following:
 
 ```console
-.
-├── README.md
++
+├── README.md                                       # This README file
 ├── aio                                             # All-in-One -- single node deployment
 │   ├── devstack                                    # Included for demo purposes (refer to class material)
 │   │   └── README.md
-│   ├── manual                                      # Manual configuration of OpenStack (using distro RPM)
-│   │   └── README.md
 │   └── packstack                                   # AIO configuration using RDO Project
 │       └── README.md
-└── multinode
-    ├── manual
+└── multinode                                       # Multi nodes deployments
+    ├── manual                                      # Manual configuration of OpenStack (using distro RPM)
     │   └── README.md
     └── packstack
-        └── README.md
+        └── README.md                               # Adding compute nodes
 
 ```
 
